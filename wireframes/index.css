@@ -7,15 +7,7 @@
   font-size: 1.5rem;
   margin: 0;
   min-height: 100vh;
-}
-
-.bts-offline-site {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1.5rem;
-  margin: 0;
-  min-height: 100vh;
+  min-width: 320px;
 }
 
 .bts-page {
@@ -33,27 +25,6 @@
   min-height: 10vh;
   padding: 1rem;
   overflow-y: auto;
-}
-
-.bts-main-header {
-  align-items: center;
-  background-color: #10073d;
-  color: #88f24f;
-  display: flex;
-  font-size: 2rem;
-  padding-bottom: 1rem;
-  padding-top: 0.5rem;
-  width: 100%;
-}
-
-.bts-main-header::before,
-.bts-main-header::after {
-  color: #88f24f;
-  content: "";
-  background:repeating-linear-gradient(45deg, currentColor 0 .1em);
-  flex: 1;
-  height: .2em;
-  margin: .2em;
 }
 
 .bts-submit-btn {
@@ -86,23 +57,7 @@
 }
 
 .bts-form input {
+  font-weight: 900;
   height: 1.5rem;
   width: 60vw;
-}
-
-.footer-flex-container {
-  align-items: center;
-  border-top: 1px solid black;
-  background-color: #10073d;
-  color: #88f24f;
-  display: flex;
-  font-size: 1rem;
-  justify-content: center;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-}
-
-.footer-element {
-  flex-grow: 1;
-  text-align: center;
 }
