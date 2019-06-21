@@ -8,6 +8,7 @@
   margin: 0;
   min-height: 100vh;
   min-width: 320px;
+  width: 100vw;
 }
 
 .bts-page {
@@ -39,15 +40,32 @@
   min-height: 5vh;
 }
 
+.bts-page-element {
+  align-content: center;
+  max-height: 5vh;
+  /* max-width: 95vw; */
+  overflow-x: auto;
+  vertical-align: middle;
+}
+
+.bts-page-element:not(:last-child) {
+  border-bottom: 1px dashed #10073d;
+}
+
+.bts-source-alert {
+  border-top: 3px solid #10073d;
+  border-bottom: 1px solid #10073d;
+}
+
 .page-flex-container {
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
 }
 
-.page-flex-container div {
+/* .page-flex-container div {
   width: 100%;
-}
+} */
 
 .bts-form {
   display: flex;
