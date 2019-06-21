@@ -15,8 +15,8 @@
   <header class='bts-main-header'>Break The Story - 1st Source</header>
   <main class='bts-page'>
     <div class='page-flex-container'>
-      <div class='bts-page-element bts-source-alert'>
-        A source wants to connect!
+      <div id='bts-source-alert' class='bts-page-element'>
+        A SOURCE WANTS TO CONNECT!<br/>
       </div>
       <div class='bts-page-element'>
         Name: Bob Shallcross
@@ -25,7 +25,11 @@
         Position: Coach, mid-level club
       </div>
       <div class='bts-page-element'>
-        Instinct: Respectable
+        Reputation: Respectable
+      </div>
+      <div class='bts-page-element'>
+        <button onclick="() => window.alert('Accepted')" class='bts-button'>Accept Source</button>
+        <button disabled onclick="(function(){alert('Rejected')()" class='bts-button'>Reject Source</button>
       </div>
     </div>
   </main>
