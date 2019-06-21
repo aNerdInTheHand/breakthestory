@@ -1,0 +1,25 @@
+{
+  "name": "breakthestory",
+  "version": "1.0.0",
+  "description": "Simple responsive web app where you play as a football (soccer) journalist, cultivating sources and breaking stories",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aNerdInTheHand/breakthestory.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "es6",
+    "mithril"
+  ],
+  "author": "Nick Holvast",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aNerdInTheHand/breakthestory/issues"
+  },
+  "homepage": "https://github.com/aNerdInTheHand/breakthestory#readme"
+}
