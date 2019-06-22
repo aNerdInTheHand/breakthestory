@@ -64,11 +64,16 @@
 
 .bts-page-element:not(:last-child) {
   border-bottom: 1px dashed #10073d;
-  padding-bottom: 2rem;
 }
 
-#bts-source-alert {
+.overview-title {
+  font-weight: bolder;
+  margin-right: 1rem;
+}
+
+#bts-source-alert, #bts-name-box {
   background-color: #ebdddd;
+  /* background-image: linear-gradient(#ebdddd, #88f24f, #ebdddd); */
   border-top: 3px solid #10073d;
   border-bottom: 3px solid #10073d;
   font-size: 2rem;
