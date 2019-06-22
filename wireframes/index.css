@@ -40,19 +40,26 @@
 }
 
 .bts-button {
-  background-color: #10073d;
-  color: #88f24f;
-  border-radius: 1rem;
+  align-content: center;
+  background-color: #ebdddd;
+  border: 2px solid #10073d;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
   font-family: 'Stylish', sans-serif;
   font-size: 1.5rem;
-  margin: 1rem;
+  margin: 0.5rem 1rem;
   max-height: 5vh;
   max-width: 38vw;
   min-height: 5vh;
+  padding: 1.5rem;
 }
 
 .bts-button:disabled, .bts-button[disabled] {
-  background-color: #4e4d53;
+  border: 1px solid #c9c4c4;
+  background-color: #c9c4c4;
+  color: #1f135a;
+  font-weight: 200;
 }
 
 .bts-page-element:not(:last-child) {

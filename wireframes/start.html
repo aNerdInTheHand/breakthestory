@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="theme-color" content="#88f24f" />
+  <meta name="description" content="Break The Story - home" />
+  <title>Break The Story</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="header-footer.css" />
+  <link rel="stylesheet" href="media.css" />
+</head>
+<body class='bts-site'>
+
+  <header class='bts-main-header'>Break The Story - Home</header>
+  <main class='bts-page'>
+    <div class='page-flex-container'>
+      <div class='bts-page-element'>
+        <details open class='bts-details'>
+          <summary>How to play</summary>
+          <p>Welcome to Break The Story. You play as a football journalist trying to make your name as somebody in the know.</p>
+          <p>You will be approached by people claiming to have insider knowledge, but it is up to you whether to use them as a trusted source.</p>
+          <p>Using information your sources provide, you can write stories for broadsheet newspapers, tabloid newspapers, websites and social media.</p>
+          <p>You will gain reputation for reporting stories that come true and lose it for those that don't.</p>
+          <p>The amount of reputation at stake is affected by things like the size of the story, where it's published, and how staunchly you defended it.</p>
+          <p>To get started, enter your name and fictional social media handle to be used in the game.</p>
+        </details>
+      </div>
+      <div class='bts-form bts-page-element'>
+        <form onsubmit="() => alert('Start game')">
+          <div>
+            <label for="name">Enter your name</label>
+            <input type="text" placeholder="George Caulkin" name="name">
+          </div>
+          <div>
+            <label for="social handle">Enter your social handle</label>
+            <input type="text" placeholder="gcaulkz69" name="social handle">
+          </div>
+          <input type="submit" class='bts-button'>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class='footer-flex-container'>
+    <div class='footer-element'>v0.0.1</div>
+    <div class='footer-element'>Copyright (c) 2019 Nick Holvast</div>
+    <div class='footer-element'>Break The Story</div>
+  </footer>
+
+  <script type="text/javascript" src="fonts.js"></script>
+</body>
+</html>
