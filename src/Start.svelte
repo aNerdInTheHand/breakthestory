@@ -3,7 +3,7 @@
   import {
     gameState,
     name
-  } from './stores'
+  } from './store/store'
 </script>
 
 <h2>Ok, let's get this show on the road!</h2>

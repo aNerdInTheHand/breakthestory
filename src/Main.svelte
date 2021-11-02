@@ -1,5 +1,5 @@
 <script>
-  import { name } from './stores'
+  import { name } from './store/store'
   const src = 'https://media.giphy.com/media/3ohhwzqvVKe4KHAXOE/giphy.gif'
   const alt = 'gooooold member'
 </script>

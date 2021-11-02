@@ -1,6 +1,6 @@
 <script>
   import C from './constants'
-  import { gameState } from './stores'
+  import { gameState } from './store/store'
 </script>
 
 <div>
@@ -18,6 +18,25 @@
     social media, the more respect you'll gain for breaking news. But remember, the bigger you
     are, the harder you fall, so make sure you're confident in your facts before publishing.
   </p>
+  <p>
+    Before you start, some boring technical stuff:
+  </p>
+  <div>
+    <ul>
+      <li>
+        You can't save your game - if you refresh your browser, you'll start a new game
+      </li>
+      <li>
+        This site does not currently use cookies
+      </li>
+      <li>
+        This site does not currently mine Dogecoin on your GPU
+      </li>
+      <li>
+        If you're enjoying playing you can give me some money (link to follow)
+      </li>
+    </ul>
+  </div>
 </div>
 
 <div>
@@ -25,28 +44,3 @@
     Let's get started
   </button>
 </div>
-
-<style>
-  div {
-    align-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  button {
-    border-radius: 1rem;
-    height: 2.5rem;
-    max-width: 200px;
-  }
-
-  @media (min-width: 640px) {
-    div {
-      font-size: large;
-    }
-    button {
-      border-radius: 1rem;
-      height: 3.5rem;
-      max-width: 250px;
-    }
-  }
-</style>
