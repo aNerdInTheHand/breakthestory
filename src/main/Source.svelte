@@ -11,5 +11,14 @@
 </div>
 
 <div>
-  <button on:click={() => newSource.update(s => s = false)}></button>
+  <button on:click={() => newSource.update(s => s = false)}>
+    Acknowledge
+  </button>
 </div>
+
+<style>
+  .new-source {
+    border: 0.7rem solid #bada55;
+    border-radius: 0.5rem;
+  }
+</style>
