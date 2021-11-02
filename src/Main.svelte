@@ -1,8 +1,13 @@
 <script>
-  import { name } from './store/store'
-  const src = 'https://media.giphy.com/media/3ohhwzqvVKe4KHAXOE/giphy.gif'
-  const alt = 'gooooold member'
+  import { newSource, sources } from './store'
+  import Source from './main/Source.svelte'
 </script>
 
-<h1>{$name} has had an unfortunate Svelting accident.</h1>
-<img {src} {alt}>
+<div>
+  <h1 class='title'>Break The Story</h1>
+  {#if $newSource}
+    <Source />
+  {/if}
+
+  <p>Other stuff...</p>
+</div>

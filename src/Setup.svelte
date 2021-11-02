@@ -3,8 +3,9 @@
   import {
     gameState,
     name,
-    socialHandle
-  } from './store/store'
+    socialHandle,
+    sources
+  } from './store'
 </script>
 
 <div>
@@ -19,10 +20,14 @@
     @<input type='text' bind:value={$socialHandle} />
   </div>
 
+  {#each $sources as source}
+    <p>{source.name}</p>
+    <p>{source.reliability}</p>
+  {/each}
+
   <button
     disabled={!$name || !socialHandle}
-    on:click={() => gameState.update(C.gameStates.inGame)}
-    type='submit'
+    on:click={() => gameState.update(g => g = C.gameStates.main)}
   >
     Start
   </button>

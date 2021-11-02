@@ -1,7 +1,7 @@
 import { writable } from 'svelte/store'
 
-const name = writable('Bort')
-const socialHandle = writable('borty69')
+const name = writable('')
+const socialHandle = writable('')
 
 export default {
   name,

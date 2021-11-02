@@ -2,12 +2,10 @@
   import Main from './Main.svelte'
   import Prestart from './Prestart.svelte'
   import Setup from './Setup.svelte'
-  import Start from './Start.svelte'
   export let C
   import {
-    chance,
     gameState
-  } from './store/store'
+  } from './store'
 </script>
 
 <main>

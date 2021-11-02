@@ -1,6 +1,6 @@
 <script>
   import C from './constants'
-  import { gameState } from './store/store'
+  import { gameState } from './store'
 </script>
 
 <div>
