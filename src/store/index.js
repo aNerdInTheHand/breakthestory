@@ -4,6 +4,8 @@ import details from './details'
 import generateSource from './helpers/generateSource'
 
 const firstSource = generateSource()
+
+export const activeTip = writable({})
 export const chance = writable(C.randomNumber())
 export const feeling = writable('')
 export const gameState = writable(C.gameStates.prestart)

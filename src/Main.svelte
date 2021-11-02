@@ -1,7 +1,12 @@
 <script>
-  import { newSource, sources } from './store'
+  import {
+    activeTip,
+    newSource,
+    sources
+  } from './store'
   import Source from './main/Source.svelte'
   import Sources from './main/Sources.svelte'
+  console.log($activeTip)
 </script>
 
 <div>

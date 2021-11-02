@@ -1,5 +1,16 @@
 <script>
-  import { newSource } from '../store'
+  import {
+    activeTip,
+    newSource,
+    sources
+  } from '../store'
+  import generateTip from '../store/helpers/generateTip'
+  const acknowledge = () => {
+    const tip = generateTip(newSource)
+    activeTip.update(t => t = tip)
+    sources.update(s => s = s.concat(newSource))
+    newSource.update(s => s = false)
+  }
 </script>
 
 <div class='new-source'>
@@ -11,7 +22,7 @@
 </div>
 
 <div>
-  <button on:click={() => newSource.update(s => s = false)}>
+  <button on:click={() => acknowledge()}>
     Acknowledge
   </button>
 </div>
