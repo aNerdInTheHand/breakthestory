@@ -4,7 +4,7 @@
 </script>
 
 <div>
-  <h1>Break The Story</h1>
+  <h1 data-testid='prestart-title'>Break The Story</h1>
   <p>You play as an aspiring football journalist aiming to make a name for yourself.</p>
   <p>
     You will be presented with stories from a whole range of people,
