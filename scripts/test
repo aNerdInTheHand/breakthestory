@@ -1,8 +1,5 @@
 #!/usr/bin/env sh
 
-# npm test                           # To run all test files
-# npm test spec/MyComponent.spec.js  # To run just a single test file
-
 if [ -z $1 ]; then
   npx rollup -c rollup.test.config.js
 else

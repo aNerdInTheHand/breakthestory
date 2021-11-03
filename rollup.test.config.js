@@ -1,7 +1,7 @@
-import resolve from "@rollup/plugin-node-resolve"
-import commonjs from "@rollup/plugin-commonjs"
-import multi from "@rollup/plugin-multi-entry"
-import svelte from "rollup-plugin-svelte"
+import commonjs from "@rollup/plugin-commonjs";
+import multi from "@rollup/plugin-multi-entry";
+import svelte from "rollup-plugin-svelte";
+import babel from "@rollup/plugin-babel";
 
 export default {
   input: "spec/**/*.spec.js",
@@ -13,14 +13,16 @@ export default {
   },
   plugins: [
     multi(),
-    svelte({ css: false, dev: true }),
-    resolve({
-      only: [/^svelte-/]
-    }),
-    commonjs()
+    svelte({ css: false }),
+    commonjs(),
+    babel({
+      babelHelpers: "bundled",
+      extensions: [".js", ".svelte"],
+      plugins: ["rewire-exports"]
+    })
   ],
   onwarn (warning, warn) {
-    if (warning.code === "UNRESOLVED_IMPORT") return
-    warn(warning)
+    if (warning.code === "UNRESOLVED_IMPORT") return;
+    warn(warning);
   }
-}
+};
