@@ -1,6 +1,9 @@
+const Chance = require('chance')
+const chance = new Chance()
+
 module.exports = [
   {
-    text: 'Baby has fallen asleep peacefully and easily in your arms. There\'s a match on TV just about to start. Do you hold the baby while you watch the match, put the baby in a moses basket in the room, or give the baby to your partner to look after?',
+    text: `Star player ${chance.name({ gender: 'male' })} is trying to force a move to Leddersford Town.`,
     options: [
       {
         buttonText: 'Hold Baby',

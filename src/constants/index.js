@@ -1,4 +1,4 @@
-const questions = require('./questions')
+const stories = require('./stories')
 
 module.exports = {
   gameStates: {
@@ -6,6 +6,6 @@ module.exports = {
     prestart: 'prestart',
     setup: 'setup'
   },
-  questions,
+  stories,
   randomNumber: () => Math.floor(Math.random() * 100)
 }
