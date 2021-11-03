@@ -5,7 +5,15 @@ import generateSource from './helpers/generateSource'
 
 const firstSource = generateSource()
 
-export const activeTip = writable({})
+// scores
+export const earnings = writable(0)
+export const followers = writable(10)
+export const storiesSoldBroadsheet = writable(0)
+export const storiesSoldMagazine = writable(0)
+export const storiesSoldTabloid = writable(0)
+// end scores
+
+export const activeTip = writable('')
 export const chance = writable(C.randomNumber())
 export const feeling = writable('')
 export const gameState = writable(C.gameStates.prestart)
