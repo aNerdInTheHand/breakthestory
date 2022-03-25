@@ -1,13 +1,12 @@
 <script>
   import {
     activeTip,
+    generateTip,
     newSource,
     sources
   } from '../store'
-  import generateTip from '../store/helpers/generateTip'
-  console.log(generateTip)
   const acknowledge = () => {
-    const tip = generateTip(newSource)
+    const tip = generateTip($newSource)
     console.log('Tip:\n', tip)
     activeTip.update(t => t = tip)
     sources.update(s => s = s.concat(newSource))

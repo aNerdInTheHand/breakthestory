@@ -1,13 +1,13 @@
-const generateTip = source => {
-  console.log('here')
-  console.log(source)
+const generateTip = ({
+  C,
+  chance
+}) => source => {
   const tip = {
-    detail: 'Baconface is moving to Lorem Ipsum United',
-    source,
+    detail: `${chance.name({ gender: 'male' })} is moving to ${chance.city()} FC`,
+    source: source,
     isTrue: true,
     proof: 'Whatsapp screenshot'
   }
-  console.log('Tip:\n', tip)
   return tip
 }
 

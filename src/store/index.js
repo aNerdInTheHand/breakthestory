@@ -2,6 +2,9 @@ import { writable, derived } from 'svelte/store'
 import C from '../constants'
 import details from './details'
 import generateSource from './helpers/generateSource'
+import initGenerateTip from './helpers/generateTip'
+import Chance from 'chance'
+const chance = new Chance()
 
 const firstSource = generateSource()
 
@@ -14,9 +17,9 @@ export const storiesSoldTabloid = writable(0)
 // end scores
 
 export const activeTip = writable('')
-export const chance = writable(C.randomNumber())
-export const feeling = writable('')
+export const randomNumber = writable(C.randomNumber())
 export const gameState = writable(C.gameStates.prestart)
+export const generateTip = initGenerateTip({ C, chance })
 export const name = details.name
 export const socialHandle = details.socialHandle
 export const newSource = writable(generateSource())
@@ -26,8 +29,3 @@ export const greeting = derived(
 	name,
 	$name => `Hi ${$name}, I'm dad!`
 );
-
-export const jokeGreeting = derived(
-  feeling,
-  $feeling => `Hi ${$feeling.toLocaleLowerCase()}, I'm dad!`
-)
