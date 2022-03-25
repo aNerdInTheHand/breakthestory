@@ -29,7 +29,8 @@
   "dependencies": {
     "chance": "^1.1.8",
     "gh-pages": "^3.2.3",
-    "sirv-cli": "^1.0.0"
+    "sirv-cli": "^1.0.0",
+    "svelte-navigator": "^3.1.5"
   },
   "repository": {
     "type": "git",
